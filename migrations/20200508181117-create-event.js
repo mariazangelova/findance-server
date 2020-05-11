@@ -35,6 +35,12 @@ module.exports = {
       duration: {
         type: Sequelize.DECIMAL,
       },
+      price: {
+        type: Sequelize.DECIMAL,
+      },
+      imageUrl: {
+        type: Sequelize.STRING,
+      },
       userId: {
         allowNull: false,
         type: Sequelize.INTEGER,

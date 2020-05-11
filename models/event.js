@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
       datetime: DataTypes.DATE,
       maxDancers: DataTypes.INTEGER,
       duration: DataTypes.DECIMAL,
+      price: DataTypes.DECIMAL,
+      imageUrl: DataTypes.STRING,
       userId: DataTypes.INTEGER,
     },
     {}
