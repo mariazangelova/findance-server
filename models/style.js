@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   style.associate = function (models) {
-    style.belongsToMany(model.event, {
+    style.belongsToMany(models.event, {
       through: "eventstyle",
       foreignKey: "styleId",
     });
