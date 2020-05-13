@@ -54,6 +54,9 @@ app.use("/", authRouter);
 const eventsRouter = require("./routers/events");
 app.use("/events", eventsRouter);
 
+const stylesRouter = require("./routers/styles");
+app.use("/styles", stylesRouter);
+
 // Listen for connections on specified port (default is port 4000)
 const { PORT } = require("./config/constants");
 
