@@ -22,7 +22,19 @@ module.exports = {
         type: Sequelize.STRING,
       },
       location: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+      address: {
         allowNull: false,
+        type: Sequelize.STRING,
+      },
+      longitude: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+      latitude: {
+        allowNull: true,
         type: Sequelize.STRING,
       },
       datetime: {
