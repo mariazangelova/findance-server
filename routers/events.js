@@ -3,6 +3,7 @@ const { Router } = require("express");
 const router = new Router();
 const Event = require("../models").event;
 const Style = require("../models").style;
+const eventStyles = require("../models").eventstyle;
 
 router.get("/", async (req, res, next) => {
   const events = await Event.findAll({ include: [Style] });
@@ -26,8 +27,15 @@ router.post("/", async (req, res, next) => {
   try {
     const eventData = req.body.eventData;
     eventData.userId = 1;
-    const event = Event.create(eventData);
-    return res.status(201).send({ message: "Event added", event });
+    Event.create(eventData).then(function (newEvent) {
+      // Get the id of the newly created model
+      //console.log(newEvent.dataValues.id);
+      const newEventId = newEvent.dataValues.id;
+      eventData.styles.map((style) =>
+        eventStyles.create({ eventId: newEventId, styleId: style })
+      );
+    });
+    return res.status(201).send({ message: "Event added" });
   } catch (e) {
     next(e);
   }
