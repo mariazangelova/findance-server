@@ -23,7 +23,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 router.post("/", async (req, res, next) => {
-  console.log("REQUEST", req.body.eventData);
+  //console.log("REQUEST", req.body.eventData);
   try {
     const eventData = req.body.eventData;
     eventData.userId = 1;
