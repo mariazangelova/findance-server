@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       address: DataTypes.STRING,
       longitude: DataTypes.STRING,
       latitude: DataTypes.STRING,
-      datetime: DataTypes.DATE,
+      datetime: DataTypes.STRING,
       maxDancers: DataTypes.INTEGER,
       duration: DataTypes.DECIMAL,
       price: DataTypes.DECIMAL,

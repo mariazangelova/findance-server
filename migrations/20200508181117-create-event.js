@@ -39,7 +39,7 @@ module.exports = {
       },
       datetime: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: Sequelize.STRING,
       },
       maxDancers: {
         type: Sequelize.INTEGER,

@@ -3,6 +3,7 @@ const { Router } = require("express");
 const router = new Router();
 const Event = require("../models").event;
 const Style = require("../models").style;
+
 const eventStyles = require("../models").eventstyle;
 
 router.get("/", async (req, res, next) => {
@@ -15,7 +16,7 @@ router.get("/:id", async (req, res, next) => {
   if (isNaN(parseInt(id))) {
     return res.status(400).send({ message: "Event's id is not a number." });
   }
-  const event = await Event.findByPk(id);
+  const event = await Event.findByPk(id, { include: [Style] });
   if (event === null) {
     return res.status(404).send({ message: "No such event here." });
   }

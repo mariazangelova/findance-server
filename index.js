@@ -57,6 +57,9 @@ app.use("/events", eventsRouter);
 const stylesRouter = require("./routers/styles");
 app.use("/styles", stylesRouter);
 
+const dancersRouter = require("./routers/dancers");
+app.use("/dancers", dancersRouter);
+
 // Listen for connections on specified port (default is port 4000)
 const { PORT } = require("./config/constants");
 
