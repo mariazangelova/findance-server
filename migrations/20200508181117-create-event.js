@@ -22,18 +22,36 @@ module.exports = {
         type: Sequelize.STRING,
       },
       location: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+      address: {
         allowNull: false,
+        type: Sequelize.STRING,
+      },
+      longitude: {
+        allowNull: true,
+        type: Sequelize.STRING,
+      },
+      latitude: {
+        allowNull: true,
         type: Sequelize.STRING,
       },
       datetime: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: Sequelize.STRING,
       },
       maxDancers: {
         type: Sequelize.INTEGER,
       },
       duration: {
         type: Sequelize.DECIMAL,
+      },
+      price: {
+        type: Sequelize.DECIMAL,
+      },
+      imageUrl: {
+        type: Sequelize.STRING,
       },
       userId: {
         allowNull: false,
