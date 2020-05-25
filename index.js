@@ -51,6 +51,9 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
 const authRouter = require("./routers/auth");
 app.use("/", authRouter);
 
+const userRouter = require("./routers/user");
+app.use("/user", userRouter);
+
 const eventsRouter = require("./routers/events");
 app.use("/events", eventsRouter);
 
