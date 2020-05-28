@@ -10,8 +10,8 @@ module.exports = {
       "users",
       [
         {
-          firstName: "test",
-          lastName: "user",
+          firstName: "Simon",
+          lastName: "Smith",
           email: "test@test.com",
           password: "test",
           phone: "",
@@ -20,8 +20,8 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          firstName: "dummy",
-          lastName: "dummy",
+          firstName: "Valerie",
+          lastName: "Petrov",
           email: "dummy@dummy.com",
           password: "dummy",
           phone: "",
