@@ -18,7 +18,25 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          name: "Body-Mind",
+          name: "Ballet",
+          description: "",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Jazz",
+          description: "",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Latin",
+          description: "",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Contact",
           description: "",
           createdAt: new Date(),
           updatedAt: new Date(),

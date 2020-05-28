@@ -17,6 +17,66 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          eventId: 3,
+          styleId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 3,
+          styleId: 6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 4,
+          styleId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 5,
+          styleId: 5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 2,
+          styleId: 6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 2,
+          styleId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 2,
+          styleId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 6,
+          styleId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 6,
+          styleId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          eventId: 6,
+          styleId: 6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
