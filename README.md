@@ -1,3 +1,10 @@
 # findance-server
 
-![database_design](dance-events-databse)
+## Technology
+
+### Node.js / Express
+### Docker / PostgreSQL / Sequelize
+
+## Database models and relations
+
+![database_design](dance-events-database.png)
