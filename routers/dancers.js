@@ -6,8 +6,12 @@ const User = require("../models").user;
 const Dancer = require("../models").dancer;
 
 router.get("/", async (req, res, next) => {
-  const dancers = await Dancer.findAll({ include: [User] });
-  res.status(200).send(dancers);
+  try {
+    const dancers = await Dancer.findAll({ include: [User] });
+    res.status(200).send(dancers);
+  } catch (e) {
+    next(e);
+  }
 });
 
 router.get("/:id", async (req, res, next) => {
