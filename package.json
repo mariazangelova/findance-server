@@ -1,5 +1,5 @@
 {
   "script": {
-    "start": "server.js"
+    "start": "node index.js"
   }
 }
