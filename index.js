@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const models = require("./models");
+var port = process.port.env || 3002;
 
 const loggerMiddleWare = require("morgan");
 app.use(loggerMiddleWare("dev"));
@@ -66,6 +68,4 @@ app.use("/dancers", dancersRouter);
 // Listen for connections on specified port (default is port 4000)
 const { PORT } = require("./config/constants");
 
-app.listen(PORT, () => {
-  console.log(`Listening on port: ${PORT}`);
-});
+models.sequelize.sync().then(() => app.listen(port, () => console.log("test")));
