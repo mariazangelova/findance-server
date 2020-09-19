@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const models = require("./models");
-var port = process.port.env || 3002;
+var port = process.env.PORT || 3002;
 
 const loggerMiddleWare = require("morgan");
 app.use(loggerMiddleWare("dev"));
